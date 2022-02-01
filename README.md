@@ -1,6 +1,6 @@
 # LeetCode
 
-|   #   |                       Title                       | Solution | Difficulty |
-| :---: | :-----------------------------------------------: | :------: | :--------: |
-| [1]() | [Two Sum](https://leetcode.com/problems/two-sum/) |   C++    |    Easy    |
+|                              #                               |                       Title                       | Solution | Difficulty |
+| :----------------------------------------------------------: | :-----------------------------------------------: | :------: | :--------: |
+| [1](https://github.com/crossoverpptx/LeetCode/blob/main/01%20Two%20Sum.md) | [Two Sum](https://leetcode.com/problems/two-sum/) |   C++    |    Easy    |
 
