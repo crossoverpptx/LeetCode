@@ -18,8 +18,6 @@ public:
 		for (int i = 0; i < nums.size(); ++i)
 		{
 			numsMap.insert(pair<int, int>(nums[i], i));
-			//Method 2
-			//numsMap[nums[i]] = i;
 		}
 		for (int i = 0; i < nums.size(); ++i)
 		{
@@ -30,14 +28,6 @@ public:
 				res.push_back(iter->second);
 				return res;
 			}
-			//Method 2
-			//int t = target - nums[i];
-			//if (numsMap.count(t) && numsMap[t] != i)
-			//{
-			//	res.push_back(i);
-			//	res.push_back(numsMap[t]);
-			//	break;
-			//}
 		}
 		return res;
 	}
