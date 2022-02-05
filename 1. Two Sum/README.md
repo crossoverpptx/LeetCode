@@ -1,4 +1,4 @@
-# 1. Two Sum
+# README
 
 这道题给了我们一个数组，还有一个目标数target，让找到两个数字，使其和为target。
 
@@ -9,12 +9,6 @@
  C++ 解法一：
 
 ```c++
-#include <iostream>
-#include <vector>
-#include <unordered_map>
-
-using std::vector; using std::unordered_map; using std::pair; using std::allocator; using std::cout;
-
 class Solution {
 public:
 	vector<int> twoSum(vector<int>& nums, int target) 
@@ -48,19 +42,5 @@ public:
 		return res;
 	}
 };
-
-int main()
-{
-	int ai[4] = { 4, 3, 7, 32 };
-	vector<int, allocator<int>> nums(ai, ai + 4);
-	//Method 2
-	//vector<int> nums = { 4, 3, 7, 32 };
-	int target = 10;
-	Solution s;
-	vector<int> result = s.twoSum(nums, target);
-	for (vector<int>::iterator it = result.begin(); it != result.end(); ++it)
-		cout << *it << " ";
-	return 0;
-}
 ```
 
