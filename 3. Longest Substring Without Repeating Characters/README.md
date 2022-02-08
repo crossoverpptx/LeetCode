@@ -34,3 +34,31 @@ public:
     }
 };
 ```
+
+下面这种解法使用了HashSet，把出现过的字符都放入HashSet中，遇到HashSet中没有的字符就加入HashSet中并更新结果res，如果遇到重复的，则从左边开始删字符，直到删到重复的字符停止。
+
+C++ 解法二：
+
+```c++
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s)
+    {
+        int res = 0, left = 0, i = 0;
+        unordered_set<char> t;
+        while (i < s.size()) {
+            if (!t.count(s[i])) 
+            {
+                t.insert(s[i++]);
+                res = max(res, (int)t.size());
+            }
+            else 
+            {
+                t.erase(s[left++]);
+            }
+        }
+        return res;
+    }
+};
+```
+
