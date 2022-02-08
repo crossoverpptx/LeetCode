@@ -46,7 +46,8 @@ public:
     {
         int res = 0, left = 0, i = 0;
         unordered_set<char> t;
-        while (i < s.size()) {
+        while (i < s.size())
+        {
             if (!t.count(s[i])) 
             {
                 t.insert(s[i++]);
