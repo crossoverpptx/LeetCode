@@ -42,11 +42,11 @@ public:
         int t = nums.size();
         if ( t % 2 == 0)
         {
-            res = ((double)nums[t / 2] + nums[t / 2 - 1]) / 2;
+            res = (nums[(t - 1) / 2] + nums[t / 2]) / 2.0;
         }
         else
         {
-            res = nums[(t - 1) / 2];
+            res = nums[t / 2];
         }
 
         return res;

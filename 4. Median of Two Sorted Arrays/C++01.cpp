@@ -41,11 +41,11 @@ public:
         int t = nums.size();
         if ( t % 2 == 0)
         {
-            res = ((double)nums[t / 2] + nums[t / 2 - 1]) / 2;
+            res = (nums[(t - 1) / 2] + nums[t / 2]) / 2.0;
         }
         else
         {
-            res = nums[(t - 1) / 2];
+            res = nums[t / 2];
         }
 
         return res;
@@ -54,8 +54,8 @@ public:
 
 int main()
 {
-    vector<int> nums1 = {0, 0};
-    vector<int> nums2 = {};
+    vector<int> nums1 = {1, 2};
+    vector<int> nums2 = {3, 4};
     Solution s;
     cout << fixed << setprecision(5) <<s.findMedianSortedArrays(nums1, nums2) << endl;
     return 0;
