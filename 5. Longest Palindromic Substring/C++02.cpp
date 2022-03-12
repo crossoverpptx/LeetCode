@@ -1,74 +1,33 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-using std::string; using std::vector;
+using namespace std;
 
 class Solution {
 public:
-    string longestPalindrome(string s)
-    {
-        int n = s.size();
-        if (n < 2) 
-        {
-            return s;
-        }
+    string longestPalindrome(string s) {
+        if (s.empty())   return "";
 
-        int maxLen = 1;
-        int begin = 0;
-        // dp[i][j] 表示 s[i..j] 是否是回文串
-        vector<vector<int>> dp(n, vector<int>(n));
-        // 初始化：所有长度为 1 的子串都是回文串
-        for (int i = 0; i < n; i++) {
-            dp[i][i] = true;
-        }
-        // 递推开始
-        // 先枚举子串长度
-        for (int L = 2; L <= n; L++)
-        {
-            // 枚举左边界，左边界的上限设置可以宽松一些
-            for (int i = 0; i < n; i++)
-            {
-                // 由 L 和 i 可以确定右边界，即 j - i + 1 = L 得
-                int j = L + i - 1;
-                // 如果右边界越界，就可以退出当前循环
-                if (j >= n)
-                {
-                    break;
-                }
-
-                if (s[i] != s[j])
-                {
-                    dp[i][j] = false;
-                }
-                else
-                {
-                    if (j - i < 3)
-                    {
-                        dp[i][j] = true;
-                    }
-                    else
-                    {
-                        dp[i][j] = dp[i + 1][j - 1];
-                    }
-                }
-
-                // 只要 dp[i][L] == true 成立，就表示子串 s[i..L] 是回文，此时记录回文长度和起始位置
-                if (dp[i][j] && j - i + 1 > maxLen)
-                {
-                    maxLen = j - i + 1;
-                    begin = i;
+        int n = s.size(), left = 0, maxLen = 1;   // 定义最长回文子串左边界及长度
+        vector<vector<int>> dp(n, vector<int>(n));  // 定义 dp 数组
+        for (int i = 0; i < n; ++i) {
+            dp[i][i] = 1;   // 单个字符均是回文串
+            for (int j = 0; j < i; ++j) {
+                dp[j][i] = (s[i] == s[j]) && (i - j < 2 || dp[j + 1][i - 1]);
+                if (dp[j][i] && (i - j + 1 > maxLen)) {
+                    left = j;
+                    maxLen = i - j + 1;
                 }
             }
         }
-        return s.substr(begin, maxLen);
+
+        return s.substr(left, maxLen);
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
-    string s1{ "abcmnmcbdsab" };
-    std::cout << s.longestPalindrome(s1) << std::endl;
+    string str{ "cbbd" };
+    cout << s.longestPalindrome(str) << endl;
     return 0;
 }

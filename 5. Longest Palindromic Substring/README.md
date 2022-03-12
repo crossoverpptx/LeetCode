@@ -38,65 +38,36 @@ public:
 
 **动态规划法**
 
+此题可以用动态规划法解，即维护一个二维数组 dp，其中 dp[i][j]表示字符串区间 [i, j] 是否为回文串。当 i = j 时，只有一个字符，肯定是回文串；如果 i = j + 1，说明是相邻字符，此时需要判断 s[i] 是否等于 s[j]；如果 i 和 j 不相邻，即 i - j >= 2 时，除了判断 s[i] 和 s[j] 相等之外，dp[i + 1][j - 1] 若为真，就是回文串。通过以上分析，可以写出递推式如下：
+
+```c++
+dp[i][j] = 1，当 i = j 时；
+dp[i][j] = s[i] == s[j]，当 j = i + 1 时；
+dp[i][j] = s[i] == s[j] && dp[i + 1][j - 1]，当 j > i + 1 时。
+```
+
+C++ 解法二：
+
 ```c++
 class Solution {
 public:
-    string longestPalindrome(string s)
-    {
-        int n = s.size();
-        if (n < 2) 
-        {
-            return s;
-        }
+    string longestPalindrome(string s) {
+        if (s.empty())   return "";
 
-        int maxLen = 1;
-        int begin = 0;
-        // dp[i][j] 表示 s[i..j] 是否是回文串
-        vector<vector<int>> dp(n, vector<int>(n));
-        // 初始化：所有长度为 1 的子串都是回文串
-        for (int i = 0; i < n; i++) {
-            dp[i][i] = true;
-        }
-        // 递推开始
-        // 先枚举子串长度
-        for (int L = 2; L <= n; L++)
-        {
-            // 枚举左边界，左边界的上限设置可以宽松一些
-            for (int i = 0; i < n; i++)
-            {
-                // 由 L 和 i 可以确定右边界，即 j - i + 1 = L 得
-                int j = L + i - 1;
-                // 如果右边界越界，就可以退出当前循环
-                if (j >= n)
-                {
-                    break;
-                }
-
-                if (s[i] != s[j])
-                {
-                    dp[i][j] = false;
-                }
-                else
-                {
-                    if (j - i < 3)
-                    {
-                        dp[i][j] = true;
-                    }
-                    else
-                    {
-                        dp[i][j] = dp[i + 1][j - 1];
-                    }
-                }
-
-                // 只要 dp[i][L] == true 成立，就表示子串 s[i..L] 是回文，此时记录回文长度和起始位置
-                if (dp[i][j] && j - i + 1 > maxLen)
-                {
-                    maxLen = j - i + 1;
-                    begin = i;
+        int n = s.size(), left = 0, maxLen = 1;   // 定义最长回文子串左边界及长度
+        vector<vector<int>> dp(n, vector<int>(n));  // 定义 dp 数组
+        for (int i = 0; i < n; ++i) {
+            dp[i][i] = 1;   // 单个字符均是回文串
+            for (int j = 0; j < i; ++j) {
+                dp[j][i] = (s[i] == s[j]) && (i - j < 2 || dp[j + 1][i - 1]);
+                if (dp[j][i] && (i - j + 1 > maxLen)) {
+                    left = j;
+                    maxLen = i - j + 1;
                 }
             }
         }
-        return s.substr(begin, maxLen);
+
+        return s.substr(left, maxLen);
     }
 };
 ```
