@@ -71,3 +71,6 @@ public:
     }
 };
 ```
+
+**Manacher 算法**
+
