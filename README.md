@@ -8,4 +8,5 @@
 |  4   | [Median of Two Sorted Arrays](https://github.com/crossoverpptx/LeetCode/blob/main/4.%20Median%20of%20Two%20Sorted%20Arrays) |   C++    |    Hard    |
 |  5   | [Longest Palindromic Substring](https://github.com/crossoverpptx/LeetCode/blob/main/5.%20Longest%20Palindromic%20Substring) |   C++    |   Medium   |
 |  6   | [ZigZag Conversion](https://github.com/crossoverpptx/LeetCode/tree/main/6.%20ZigZag%20Conversion) |   C++    |   Medium   |
+|  7   | [Reverse Integer](https://github.com/crossoverpptx/LeetCode/tree/main/7.%20Reverse%20Integer) |   C++    |   Medium   |
 
