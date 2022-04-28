@@ -10,4 +10,5 @@
 |  6   | [ZigZag Conversion](https://github.com/crossoverpptx/LeetCode/tree/main/6.%20ZigZag%20Conversion) |   C++    |   Medium   |
 |  7   | [Reverse Integer](https://github.com/crossoverpptx/LeetCode/tree/main/7.%20Reverse%20Integer) |   C++    |   Medium   |
 |  8   | [<font color="red">String to Integer (atoi)</font>](https://github.com/crossoverpptx/LeetCode/tree/main/8.%20String%20to%20Integer%20(atoi)) |   C++    |   Medium   |
+|  9   | [Palindrome Number](https://github.com/crossoverpptx/LeetCode/tree/main/9.%20Palindrome%20Number) |   C++    |    Easy    |
 
