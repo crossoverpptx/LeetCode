@@ -22,3 +22,5 @@
 |  18  | [4Sum](https://github.com/crossoverpptx/LeetCode/tree/main/18.%204Sum) |   C++    |   Medium   |
 |  19  | [Remove Nth Node From End of List](https://github.com/crossoverpptx/LeetCode/tree/main/19.%20Remove%20Nth%20Node%20From%20End%20of%20List) |   C++    |   Medium   |
 |  20  | [Valid Parentheses](https://github.com/crossoverpptx/LeetCode/tree/main/20.%20Valid%20Parentheses) |   C++    |    Easy    |
+|  21  | [Merge Two Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/21.%20Merge%20Two%20Sorted%20Lists) |   C++    |    Easy    |
+
