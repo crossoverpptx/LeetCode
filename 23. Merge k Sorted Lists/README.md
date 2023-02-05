@@ -4,7 +4,7 @@
 
 ### 思路与算法
 
-该题的基础模型即[21. Merge Two Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/21. Merge Two Sorted Lists)，因此可以顺序完成2个链表的合并，直至第 k 个链表。
+该题的基础模型即[21. Merge Two Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/21.%20Merge%20Two%20Sorted%20Lists)，因此可以顺序完成2个链表的合并，直至第 k 个链表。
 
 ### 复杂度分析
 
