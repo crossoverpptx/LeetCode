@@ -24,4 +24,5 @@
 |  20  | [Valid Parentheses](https://github.com/crossoverpptx/LeetCode/tree/main/20.%20Valid%20Parentheses) |   C++    |    Easy    |
 |  21  | [Merge Two Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/21.%20Merge%20Two%20Sorted%20Lists) |   C++    |    Easy    |
 |  22  | [Generate Parentheses](https://github.com/crossoverpptx/LeetCode/tree/main/22.%20Generate%20Parentheses) |   C++    |   Medium   |
+|  23  | [Merge k Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/23.%20Merge%20k%20Sorted%20Lists) |   C++    |    Hard    |
 
