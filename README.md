@@ -26,4 +26,5 @@
 |  22  | [Generate Parentheses](https://github.com/crossoverpptx/LeetCode/tree/main/22.%20Generate%20Parentheses) |   C++    |   Medium   |
 |  23  | [Merge k Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/23.%20Merge%20k%20Sorted%20Lists) |   C++    |    Hard    |
 |  24  | [Swap Nodes in Pairs](https://github.com/crossoverpptx/LeetCode/tree/main/24.%20Swap%20Nodes%20in%20Pairs) |   C++    |   Medium   |
+|  25  | [Reverse Nodes in k-Group（K 个一组翻转链表）](https://github.com/crossoverpptx/LeetCode/tree/main/25.%20Reverse%20Nodes%20in k-Group) |   C++    |    Hard    |
 
