@@ -27,4 +27,5 @@
 |  23  | [Merge k Sorted Lists](https://github.com/crossoverpptx/LeetCode/tree/main/23.%20Merge%20k%20Sorted%20Lists) |   C++    |    Hard    |
 |  24  | [Swap Nodes in Pairs](https://github.com/crossoverpptx/LeetCode/tree/main/24.%20Swap%20Nodes%20in%20Pairs) |   C++    |   Medium   |
 |  25  | [Reverse Nodes in k-Group（K 个一组翻转链表）](https://github.com/crossoverpptx/LeetCode/tree/main/25.%20Reverse%20Nodes%20in%20k-Group（K%20个一组翻转链表）) |   C++    |    Hard    |
+|  26  | [Remove Duplicates from Sorted Array（删除有序数组中的重复项）](https://github.com/crossoverpptx/LeetCode/tree/main/26.%20Remove%20Duplicates%20from%20Sorted%20Array（删除有序数组中的重复项）) |   C++    |    Easy    |
 
