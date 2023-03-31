@@ -24,7 +24,7 @@
 |  20  | [Valid Parentheses（有效的括号）](https://github.com/crossoverpptx/LeetCode/tree/main/20.%20Valid%20Parentheses（有效的括号）) |   C++    |    Easy    |
 |  21  | [Merge Two Sorted Lists（合并两个有序链表）](https://github.com/crossoverpptx/LeetCode/tree/main/21.%20Merge%20Two%20Sorted%20Lists（合并两个有序链表）) |   C++    |    Easy    |
 |  22  | [Generate Parentheses（括号生成）](https://github.com/crossoverpptx/LeetCode/tree/main/22.%20Generate%20Parentheses（括号生成）) |   C++    |   Medium   |
-|  23  | [Merge k Sorted Lists（合并 K 个升序链表）](https://github.com/crossoverpptx/LeetCode/tree/main/22.%20Merge%20k%20Sorted%20Lists（合并%20K%20个升序链表）) |   C++    |    Hard    |
+|  23  | [Merge k Sorted Lists（合并 K 个升序链表）](https://github.com/crossoverpptx/LeetCode/tree/main/23.%20Merge%20k%20Sorted%20Lists（合并%20K%20个升序链表）) |   C++    |    Hard    |
 |  24  | [Swap Nodes in Pairs（两两交换链表中的节点）](https://github.com/crossoverpptx/LeetCode/tree/main/24.%20Swap%20Nodes%20in%20Pairs（两两交换链表中的节点）) |   C++    |   Medium   |
 |  25  | [Reverse Nodes in k-Group（K 个一组翻转链表）](https://github.com/crossoverpptx/LeetCode/tree/main/25.%20Reverse%20Nodes%20in%20k-Group（K%20个一组翻转链表）) |   C++    |    Hard    |
 |  26  | [Remove Duplicates from Sorted Array（删除有序数组中的重复项）](https://github.com/crossoverpptx/LeetCode/tree/main/26.%20Remove%20Duplicates%20from%20Sorted%20Array（删除有序数组中的重复项）) |   C++    |    Easy    |
