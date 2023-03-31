@@ -1,4 +1,4 @@
-# 17. Letter Combinations of a Phone Number（ 电话号码的字母组合）
+# 17. Letter Combinations of a Phone Number（电话号码的字母组合）
 
 ## 方法1：回溯法
 
