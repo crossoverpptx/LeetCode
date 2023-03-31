@@ -19,7 +19,7 @@
 |  15  | [3Sum（三数之和）](https://github.com/crossoverpptx/LeetCode/tree/main/15.%203Sum（三数之和）) |   C++    |   Medium   |
 |  16  | [3Sum Closest（最接近的三数之和）](https://github.com/crossoverpptx/LeetCode/tree/main/16.%203Sum%20Closest（最接近的三数之和）) |   C++    |   Medium   |
 |  17  | [Letter Combinations of a Phone Number（电话号码的字母组合）](https://github.com/crossoverpptx/LeetCode/tree/main/17.%20Letter%20Combinations%20of%20a%20Phone%20Number%EF%BC%88%20%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88%EF%BC%89) |   C++    |   Medium   |
-|  18  | [4Sum](https://github.com/crossoverpptx/LeetCode/tree/main/18.%204Sum) |   C++    |   Medium   |
+|  18  | [4Sum（四数之和）](https://github.com/crossoverpptx/LeetCode/tree/main/18.%204Sum（四数之和）) |   C++    |   Medium   |
 |  19  | [Remove Nth Node From End of List（删除链表的倒数第 N 个结点）](https://github.com/crossoverpptx/LeetCode/tree/main/17.%20Letter%20Combinations%20of%20a%20Phone%20Number%EF%BC%88%20%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88%EF%BC%89) |   C++    |   Medium   |
 |  20  | [Valid Parentheses（有效的括号）](https://github.com/crossoverpptx/LeetCode/tree/main/20.%20Valid%20Parentheses（有效的括号）) |   C++    |    Easy    |
 |  21  | [Merge Two Sorted Lists（合并两个有序链表）](https://github.com/crossoverpptx/LeetCode/tree/main/21.%20Merge%20Two%20Sorted%20Lists（合并两个有序链表）) |   C++    |    Easy    |
