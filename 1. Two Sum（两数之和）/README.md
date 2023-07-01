@@ -13,21 +13,20 @@
 ```c++
 class Solution {
 public:
-	vector<int> twoSum(vector<int>& nums, int target)
-	{
-		vector<int> res;
-		for (int i = 0; i < nums.size(); ++i)
-			for (int j = i + 1; j < nums.size(); ++j)
-			{
-				if (target == nums[i] + nums[j])
-				{
-					res.push_back(i);
-					res.push_back(j);
-					return res;
-				}
-			}
-		return res;
-	}
+    std::vector<int> twoSum(std::vector<int>& nums, int target) {
+        int len = nums.size();
+        std::vector<int> ans;
+        for (int i = 0; i < len; ++i) {
+            for (int j = i + 1; j < len; ++j) {
+                if(nums[i] + nums[j] == target) {
+                    ans.emplace_back(i);
+                    ans.emplace_back(j);
+                    return ans;
+                }
+            }
+        }
+        return ans;
+    }
 };
 ```
 
@@ -42,25 +41,22 @@ public:
 ```c++
 class Solution {
 public:
-	vector<int> twoSum(vector<int>& nums, int target) 
-	{
-		unordered_map<int, int> numsMap;
-		vector<int> res;
-		for (int i = 0; i < nums.size(); ++i)
-		{
-			numsMap.insert(pair<int, int>(nums[i], i));
+	std::vector<int> twoSum(std::vector<int>& nums, int target) {
+		std::unordered_map<int, int> numsMap;
+		std::vector<int> ans;
+		for (int i = 0; i < nums.size(); ++i) {
+			numsMap.insert(std::pair<int, int>(nums[i], i)); // 建立索引与值的哈希表
 		}
-		for (int i = 0; i < nums.size(); ++i)
-		{
+		for (int i = 0; i < nums.size(); ++i) {
 			auto iter = numsMap.find(target - nums[i]);
 			if (iter != numsMap.end() && iter->second != i) 
 			{
-				res.push_back(i);
-				res.push_back(iter->second);
-				return res;
+				ans.emplace_back(i);
+				ans.emplace_back(iter->second);
+				return ans;
 			}
 		}
-		return res;
+		return ans;
 	}
 };
 ```
