@@ -4,33 +4,29 @@
 
 ### 算法与思路
 
-首先想到的方法是：先求出两个链表对应的整数，得出两数之和，再将结果转成新链表。但是该算法有一个明显的问题：每个链表中的节点数在范围 [1, 100] 内，很可能会溢出。
+首先想到的方法是：先求出两个链表对应的整数，得出两数之和，再将结果转成新链表。但是该算法有一个明显的问题：每个链表中的节点数在范围 [1, 100] 内，很可能会溢出。**LeetCode的OJ判定超时。**
 
 ### C++ 解法一
 
 ```c++
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
-    {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* l = new ListNode(-1), *cur = l;
         int res1 = 0, res2 = 0, res, i = 1, j = 1;
-        while (l1)
-        {
+        while (l1) {
             res1 += l1->val * i;
             l1 = l1->next;
             i *= 10;
         }
-        while (l2)
-        {
+        while (l2) {
             res2 += l2->val * j;
             l2 = l2->next;
             j *= 10;
         }
         res = res1 + res2;
 
-        while (res / 10)
-        {
+        while (res / 10) {
             cur->next = new ListNode(res % 10);
             cur = cur->next;
             res /= 10;
@@ -53,12 +49,10 @@ public:
 ```c++
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
-    {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* dummy = new ListNode(-1), * cur = dummy;
         int carry = 0;
-        while (l1 || l2) 
-        {
+        while (l1 || l2) {
             int val1 = l1 ? l1->val : 0;
             int val2 = l2 ? l2->val : 0;
             int sum = val1 + val2 + carry;
